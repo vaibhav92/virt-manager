@@ -3377,6 +3377,7 @@ class ParserFeatures(VirtCLIParser):
         "hyperv.spinlocks.retries": "hyperv_spinlocks_retries",
         "hyperv.synic.state": "hyperv_synic",
         "hyperv.reset.state": "hyperv_reset",
+        "hyperv.reset.state": "hyperv_reset",
     }
 
     @classmethod
@@ -3426,6 +3427,7 @@ class ParserFeatures(VirtCLIParser):
         cls.add_arg("vmcoreinfo.state", "vmcoreinfo", is_onoff=True)
         cls.add_arg("ioapic.driver", "ioapic_driver")
         cls.add_arg("msrs.unknown", "msrs_unknown")
+        cls.add_arg("nested-hv", "nestedhv", is_onoff=True)
 
 
 ###################

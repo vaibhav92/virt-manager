@@ -60,6 +60,8 @@ class DomainFeatures(XMLBuilder):
     ioapic_driver = XMLProperty("./ioapic/@driver")
     msrs_unknown = XMLProperty("./msrs/@unknown")
 
+    nestedhv = XMLProperty("./nested-hv/@state", is_onoff=True)
+
     ##################
     # Default config #
     ##################
